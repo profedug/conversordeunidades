@@ -72,7 +72,8 @@ function converter() {
     const fatorSaida = fatoresConversao[grandeza][unidadeSaida];
     const valorConvertido = (valor / fatorEntrada) * fatorSaida;
 
-    valorSaida.value = valorConvertido.toFixed(4);
+    // Remove zeros não significativos
+    valorSaida.value = parseFloat(valorConvertido.toFixed(6));
 }
 
 grandezaSelect.addEventListener('change', () => {
