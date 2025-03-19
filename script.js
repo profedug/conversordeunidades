@@ -5,47 +5,39 @@ const valorEntrada = document.getElementById('valorEntrada');
 const valorSaida = document.getElementById('valorSaida');
 
 const unidades = {
-    massa: ['quilograma', 'grama', 'miligrama', 'libra', 'onça'],
-    comprimento: ['metro', 'centímetro', 'milímetro', 'quilômetro', 'milha', 'jarda', 'pé'],
-    capacidade: ['litro', 'mililitro', 'galão', 'xícara'],
-    volume: ['metro cúbico', 'litro', 'mililitro', 'galão'],
-    tempo: ['segundo', 'minuto', 'hora', 'dia']
+    massa: ['quilograma (kg)', 'grama (g)', 'miligrama (mg)'],
+    comprimento: ['metro (m)', 'centímetro (cm)', 'milímetro (mm)', 'quilômetro (km)'],
+    capacidade: ['litro (L)', 'mililitro (mL)'],
+    volume: ['metro cúbico (m³)', 'litro (L)', 'mililitro (mL)'],
+    tempo: ['segundo (s)', 'minuto (min)', 'hora (h)', 'dia (d)']
 };
 
 const fatoresConversao = {
     massa: {
-        quilograma: 1,
-        grama: 1000,
-        miligrama: 1000000,
-        libra: 2.20462,
-        onça: 35.274
+        'quilograma (kg)': 1,
+        'grama (g)': 1000,
+        'miligrama (mg)': 1000000
     },
     comprimento: {
-        metro: 1,
-        centímetro: 100,
-        milímetro: 1000,
-        quilômetro: 0.001,
-        milha: 0.000621371,
-        jarda: 1.09361,
-        pé: 3.28084
+        'metro (m)': 1,
+        'centímetro (cm)': 100,
+        'milímetro (mm)': 1000,
+        'quilômetro (km)': 0.001
     },
     capacidade: {
-        litro: 1,
-        mililitro: 1000,
-        galão: 0.264172,
-        xícara: 4.22675
+        'litro (L)': 1,
+        'mililitro (mL)': 1000
     },
     volume: {
-        'metro cúbico': 1,
-        litro: 1000,
-        mililitro: 1000000,
-        galão: 264.172
+        'metro cúbico (m³)': 1,
+        'litro (L)': 1000,
+        'mililitro (mL)': 1000000
     },
     tempo: {
-        segundo: 1,
-        minuto: 1 / 60,
-        hora: 1 / 3600,
-        dia: 1 / 86400
+        'segundo (s)': 1,
+        'minuto (min)': 1 / 60,
+        'hora (h)': 1 / 3600,
+        'dia (d)': 1 / 86400
     }
 };
 
