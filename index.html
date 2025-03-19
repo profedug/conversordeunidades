@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Conversão de Unidades</title>
+    <title>Conversor de Unidades</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Calculadora de Conversão de Unidades</h1>
-        <label for="grandeza">Selecione a Grandeza:</label>
-        <select id="grandeza">
-            <option value="massa">Massa</option>
-            <option value="comprimento">Comprimento</option>
-            <option value="capacidade">Capacidade</option>
-            <option value="volume">Volume</option>
-            <option value="tempo">Tempo</option>
-        </select>
+        <div class="calculator">
+            <h1>Conversor de Unidades</h1>
+            <div class="select-group">
+                <label for="grandeza">Grandeza:</label>
+                <select id="grandeza">
+                    <option value="massa">Massa</option>
+                    <option value="comprimento">Comprimento</option>
+                    <option value="capacidade">Capacidade</option>
+                    <option value="volume">Volume</option>
+                    <option value="tempo">Tempo</option>
+                </select>
+            </div>
 
-        <div class="conversor">
-            <input type="number" id="valorEntrada" placeholder="Digite o valor">
-            <select id="unidadeEntrada"></select>
-            <span>para</span>
-            <input type="number" id="valorSaida" placeholder="Resultado" disabled>
-            <select id="unidadeSaida"></select>
+            <div class="converter">
+                <div class="input-group">
+                    <input type="number" id="valorEntrada" placeholder="Digite o valor">
+                    <select id="unidadeEntrada"></select>
+                </div>
+                <div class="icon">→</div>
+                <div class="input-group">
+                    <input type="number" id="valorSaida" placeholder="Resultado" disabled>
+                    <select id="unidadeSaida"></select>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
